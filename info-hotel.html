@@ -1,0 +1,454 @@
+  <!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+  <link rel="stylesheet" type="text/css" href="css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <!-- header -->
+  <header class="bg-[#142973] h-[80px] w-100"></header>
+
+  <section class="bg-[#F7F9FF] !pb-10 !pt-4 lg:!py-12 lg:min-h-[calc(100vh-140px)]">
+    <div class="container mx-auto">
+      <div class="flex items-center justify-start pb-5">
+        <a class="flex items-center gap-1 text-[#0079C1] cursor-pointer" href="./detail-hotel.html">
+          <i data-lucide="chevron-left"></i>
+          <span class="uppercase">Regresar a los resultados</span>
+        </a>
+      </div>
+
+      <div class="pb-10">
+        <div class="flex gap-2 overflow-auto" id="gallery">
+          <div class="min-w-[330px] lg:min-w-fit lg:w-full h-[276px] lg:h-[560px]">
+            <div class="cursor-pointer hover:opacity-80 transition-opacity w-full h-[276px] lg:h-[560px]">
+              <img src="./img/hotel1.png" alt="Imagen 1" class="w-full h-full object-cover lg:rounded-l-2xl"
+                data-index="0">
+            </div>
+          </div>
+          <div class="lg:w-full h-[276px] lg:h-[560px] flex lg:grid lg:grid-cols-2 gap-2">
+            <div class="cursor-pointer hover:opacity-80 transition-opacity min-w-[330px] lg:min-w-fit lg:w-full h-[276px]">
+              <img src="./img/hotel2.png" alt="Imagen 2" class="w-full h-full object-cover"
+                data-index="1">
+            </div>
+            <div class="cursor-pointer hover:opacity-80 transition-opacity min-w-[330px] lg:min-w-fit lg:w-full h-[276px]">
+              <img src="./img/hotel3.png" alt="Imagen 3" class="w-full h-full object-cover lg:rounded-tr-2xl"
+                data-index="2">
+            </div>
+            <div class="cursor-pointer hover:opacity-80 transition-opacity min-w-[330px] lg:min-w-fit lg:w-full h-[276px]">
+              <img src="./img/hotel4.png" alt="Imagen 4" class="w-full h-full object-cover"
+                data-index="3">
+            </div>
+            <div class="cursor-pointer hover:opacity-80 transition-opacity min-w-[330px] lg:min-w-fit lg:w-full h-[276px]">
+              <img src="./img/hotel5.png" alt="Imagen 5" class="w-full h-full object-cover lg:rounded-br-2xl"
+                data-index="4">
+            </div>
+          </div>
+        </div>
+
+        <div id="modal" class="fixed inset-0 bg-black bg-opacity-90 hidden items-center justify-center z-50">
+          <button id="closeModal"
+            class="absolute top-4 right-4 text-white text-4xl hover:text-gray-300">&times;</button>
+          <button id="prevButton" class="absolute left-4 text-white text-6xl hover:text-gray-300">&lt;</button>
+          <button id="nextButton" class="absolute right-4 text-white text-6xl hover:text-gray-300">&gt;</button>
+          <div class="max-w-4xl max-h-[80vh] mx-auto">
+            <img id="modalImage" src="" alt="Imagen Modal" class="max-h-[80vh] mx-auto">
+          </div>
+        </div>
+      </div>
+
+      <div class="flex flex-col md:flex-row pb-10">
+        <div class="md:min-w-[60%] xl:min-w-[70%] xl:!pr-20">
+          <div class="flex items-center !mb-6 gap-2">
+            <h1 class="text-2xl">Dolce Lobo Boutique Stay</h1>
+            <span class="flex items-center gap-1">
+              <i class="max-w-[16px] text-[#FFCC00]" data-lucide="star"></i>
+              <i class="max-w-[16px] text-[#FFCC00]" data-lucide="star"></i>
+              <i class="max-w-[16px] text-[#FFCC00]" data-lucide="star"></i>
+              <i class="max-w-[16px] text-[#FFCC00]" data-lucide="star"></i>
+            </span>
+          </div>
+          <div class="flex lg:items-center gap-2 pb-6 flex-col lg:flex-row">
+            <p class="text-[#2196F3] text-sm">La Mariscal, Quito</p>
+            <p class="text-sm">Ubicado a 3,5 km del centro</p>
+            <div class="flex items-center gap-2">
+              <p class="text-[#34C759] text-sm">Excelente</p>
+              <span class="flex items-center justify-center min-w-[32px] bg-[#34C759] text-white h-[32px] rounded-full">
+                <span>9,2</span>
+              </span>
+            </div>
+          </div>
+          <div class="flex items-center gap-4 pb-4">
+            <a href="" class="flex items-center gap-1">
+              <i data-lucide="share"></i>
+              <span class="text-sm">Compartir</span>
+            </a>
+            <a href="" class="flex items-center gap-1">
+              <i data-lucide="heart"></i>
+              <span class="text-sm">Guardar</span>
+            </a>
+          </div>
+          <div class="expandable-content">
+            <div class="content-wrapper relative overflow-hidden transition-all duration-300"
+              style="max-height: 150px;">
+              <div class="flex flex-col gap-3 pb-4">
+                <p class="text-sm">Disfruta de una agradable estancia en una de las 6 habitaciones con televisión de
+                  pantalla plana. La conexión Wi-fi gratis, te mantendrá en contacto con los tuyos. Además, podrás
+                  disfrutar de canales por satélite. El cuarto de baño está provisto de bañera o ducha y artículos de
+                  higiene personal gratuitos. Entre las comodidades, se incluyen escritorio, y sillas de oficina, además
+                  de un servicio de limpieza disponible a petición.</p>
+                <p class="text-sm">Con una terraza en la azotea dónde descansar y comodidades como conexión a internet
+                  wi-fi gratis y servicios de conserjería, ¡No te faltará de nada!</p>
+                <p class="text-sm">Disfruta de una agradable estancia en una de las 6 habitaciones con televisión de
+                  pantalla plana. La conexión Wi-fi gratis, te mantendrá en contacto con los tuyos. Además, podrás
+                  disfrutar de canales por satélite. El cuarto de baño está provisto de bañera o ducha y artículos de
+                  higiene personal gratuitos. Entre las comodidades, se incluyen escritorio, y sillas de oficina, además
+                  de un servicio de limpieza disponible a petición.</p>
+                <p class="text-sm">Con una terraza en la azotea dónde descansar y comodidades como conexión a internet
+                  wi-fi gratis y servicios de conserjería, ¡No te faltará de nada!</p>
+                <p class="text-sm">Disfruta de una agradable estancia en una de las 6 habitaciones con televisión de
+                  pantalla plana. La conexión Wi-fi gratis, te mantendrá en contacto con los tuyos. Además, podrás
+                  disfrutar de canales por satélite. El cuarto de baño está provisto de bañera o ducha y artículos de
+                  higiene personal gratuitos. Entre las comodidades, se incluyen escritorio, y sillas de oficina, además
+                  de un servicio de limpieza disponible a petición.</p>
+                <p class="text-sm">Con una terraza en la azotea dónde descansar y comodidades como conexión a internet
+                  wi-fi gratis y servicios de conserjería, ¡No te faltará de nada!</p>
+                <p class="text-sm">Disfruta de una agradable estancia en una de las 6 habitaciones con televisión de
+                  pantalla plana. La conexión Wi-fi gratis, te mantendrá en contacto con los tuyos. Además, podrás
+                  disfrutar de canales por satélite. El cuarto de baño está provisto de bañera o ducha y artículos de
+                  higiene personal gratuitos. Entre las comodidades, se incluyen escritorio, y sillas de oficina, además
+                  de un servicio de limpieza disponible a petición.</p>
+                <p class="text-sm">Con una terraza en la azotea dónde descansar y comodidades como conexión a internet
+                  wi-fi gratis y servicios de conserjería, ¡No te faltará de nada!</p>
+              </div>
+              <div class="gradient absolute bottom-0 left-0 w-full h-24 bg-gradient-to-t from-[#F7F9FF] to-transparent">
+              </div>
+            </div>
+            <button class="toggle-button flex items-center gap-1 text-[#0079C1] cursor-pointer">
+              <span class="button-text">Ver más información</span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                class="button-icon">
+                <polyline points="6 9 12 15 18 9"></polyline>
+              </svg>
+            </button>
+          </div>
+        </div>
+        <div class="md:min-w-[40%] xl:min-w-[30%]">
+          <div class="sticky top-0 py-6 bg-[#F7F9FF]">
+            <div class="border border-[#C5C5D2] rounded-2xl bg-white">
+              <div class="h-[164px] relative">
+                <img class="w-full h-full object-cover rounded-t-2xl" src="./img/map.jpg" alt="">
+                <button type="button" data-bs-toggle="modal" data-bs-target="#exampleModal" class="border !border-[#142973] w-10 h-10 flex items-center justify-center bg-white rounded-md absolute top-4 right-4">
+                  <i data-lucide="fullscreen"></i>
+                </button>
+              </div>
+              <div class="p-4">
+                <h3 class="text-xl pb-2">La Mariscal, Quito</h3>
+                <p class="text-sm">Juan Rodriguez E8-34 y Diego de Almagro, 000001 Quito, Ecuador</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="">
+        <div>
+          <div class="flex items-center !mb-6 gap-2">
+            <h2 class="text-2xl">Selecciona tu habitación</h2>
+          </div>
+          <div class="flex flex-col gap-6">
+            <div class="border border-[#C5C5D2] rounded-2xl p-4 bg-white flex justify-between flex-col lg:flex-row">
+              <div class="flex flex-col gap-3">
+                <p class="text-sm">Romantic Room</p>
+                <div class="flex gap-2">
+                  <div
+                    class="border border-[#2E7D32] flex items-center justify-center text-[#2E7D32] bg-[#EDF7ED] px-3 h-[32px] rounded gap-2">
+                    <i class="w-[18px] h-[18px]" data-lucide="check"></i>
+                    <p class="text-sm">Cancelación gratuita</p>
+                  </div>
+                  <div class="flex items-center justify-center text-[#49454F] bg-[#FBF8FF] px-3 h-[32px] rounded gap-2">
+                    <p class="text-sm">Desayuno gratis</p>
+                  </div>
+                </div>
+                <p class="text-sm text-[#666666]">Reembolsable antes del 10 ago.</p>
+              </div>
+              <div class="flex flex-col gap-3">
+                <div class="lg:text-end pt-2 lg:pt-0">
+                  <p class="text-sm text-[#666666]">3 noches, desde</p>
+                  <p class="text-xl text-[#22357F]">16,136 millas</p>
+                </div>
+                <a href=""
+                  class="text-white bg-[#2196F3] w-full lg:w-fit h-[36px] rounded-[36px] px-[22px] flex items-center justify-center gap-2 uppercase shadow-md">
+                  <span>Seleccionar</span>
+                  <i data-lucide="chevron-right"></i>
+                </a>
+              </div>
+            </div>
+            <div class="border border-[#C5C5D2] rounded-2xl p-4 bg-white flex justify-between flex-col lg:flex-row">
+              <div class="flex flex-col gap-3">
+                <p class="text-sm">Romantic Room</p>
+                <div class="flex gap-2">
+                  <div
+                    class="border border-[#2E7D32] flex items-center justify-center text-[#2E7D32] bg-[#EDF7ED] px-3 h-[32px] rounded gap-2">
+                    <i class="w-[18px] h-[18px]" data-lucide="check"></i>
+                    <p class="text-sm">Cancelación gratuita</p>
+                  </div>
+                  <div class="flex items-center justify-center text-[#49454F] bg-[#FBF8FF] px-3 h-[32px] rounded gap-2">
+                    <p class="text-sm">Desayuno gratis</p>
+                  </div>
+                </div>
+                <p class="text-sm text-[#666666]">Reembolsable antes del 10 ago.</p>
+              </div>
+              <div class="flex flex-col gap-3">
+                <div class="lg:text-end pt-2 lg:pt-0">
+                  <p class="text-sm text-[#666666]">3 noches, desde</p>
+                  <p class="text-xl text-[#22357F]">16,136 millas</p>
+                </div>
+                <a href=""
+                  class="text-white bg-[#2196F3] w-full lg:w-fit h-[36px] rounded-[36px] px-[22px] flex items-center justify-center gap-2 uppercase shadow-md">
+                  <span>Seleccionar</span>
+                  <i data-lucide="chevron-right"></i>
+                </a>
+              </div>
+            </div>
+            <div class="border border-[#C5C5D2] rounded-2xl p-4 bg-white flex justify-between flex-col lg:flex-row">
+              <div class="flex flex-col gap-3">
+                <p class="text-sm">Romantic Room</p>
+                <div class="flex gap-2">
+                  <div
+                    class="border border-[#2E7D32] flex items-center justify-center text-[#2E7D32] bg-[#EDF7ED] px-3 h-[32px] rounded gap-2">
+                    <i class="w-[18px] h-[18px]" data-lucide="check"></i>
+                    <p class="text-sm">Cancelación gratuita</p>
+                  </div>
+                  <div class="flex items-center justify-center text-[#49454F] bg-[#FBF8FF] px-3 h-[32px] rounded gap-2">
+                    <p class="text-sm">Desayuno gratis</p>
+                  </div>
+                </div>
+                <p class="text-sm text-[#666666]">Reembolsable antes del 10 ago.</p>
+              </div>
+              <div class="flex flex-col gap-3">
+                <div class="lg:text-end pt-2 lg:pt-0">
+                  <p class="text-sm text-[#666666]">3 noches, desde</p>
+                  <p class="text-xl text-[#22357F]">16,136 millas</p>
+                </div>
+                <a href=""
+                  class="text-white bg-[#2196F3] w-full lg:w-fit h-[36px] rounded-[36px] px-[22px] flex items-center justify-center gap-2 uppercase shadow-md">
+                  <span>Seleccionar</span>
+                  <i data-lucide="chevron-right"></i>
+                </a>
+              </div>
+            </div>
+            <div class="border border-[#C5C5D2] rounded-2xl p-4 bg-white flex justify-between flex-col lg:flex-row">
+              <div class="flex flex-col gap-3">
+                <p class="text-sm">Romantic Room</p>
+                <div class="flex gap-2">
+                  <div
+                    class="border border-[#2E7D32] flex items-center justify-center text-[#2E7D32] bg-[#EDF7ED] px-3 h-[32px] rounded gap-2">
+                    <i class="w-[18px] h-[18px]" data-lucide="check"></i>
+                    <p class="text-sm">Cancelación gratuita</p>
+                  </div>
+                  <div class="flex items-center justify-center text-[#49454F] bg-[#FBF8FF] px-3 h-[32px] rounded gap-2">
+                    <p class="text-sm">Desayuno gratis</p>
+                  </div>
+                </div>
+                <p class="text-sm text-[#666666]">Reembolsable antes del 10 ago.</p>
+              </div>
+              <div class="flex flex-col gap-3">
+                <div class="lg:text-end pt-2 lg:pt-0">
+                  <p class="text-sm text-[#666666]">3 noches, desde</p>
+                  <p class="text-xl text-[#22357F]">16,136 millas</p>
+                </div>
+                <a href=""
+                  class="text-white bg-[#2196F3] w-full lg:w-fit h-[36px] rounded-[36px] px-[22px] flex items-center justify-center gap-2 uppercase shadow-md">
+                  <span>Seleccionar</span>
+                  <i data-lucide="chevron-right"></i>
+                </a>
+              </div>
+            </div>
+            <div class="border border-[#C5C5D2] rounded-2xl p-4 bg-white flex justify-between flex-col lg:flex-row">
+              <div class="flex flex-col gap-3">
+                <p class="text-sm">Romantic Room</p>
+                <div class="flex gap-2">
+                  <div
+                    class="border border-[#2E7D32] flex items-center justify-center text-[#2E7D32] bg-[#EDF7ED] px-3 h-[32px] rounded gap-2">
+                    <i class="w-[18px] h-[18px]" data-lucide="check"></i>
+                    <p class="text-sm">Cancelación gratuita</p>
+                  </div>
+                  <div class="flex items-center justify-center text-[#49454F] bg-[#FBF8FF] px-3 h-[32px] rounded gap-2">
+                    <p class="text-sm">Desayuno gratis</p>
+                  </div>
+                </div>
+                <p class="text-sm text-[#666666]">Reembolsable antes del 10 ago.</p>
+              </div>
+              <div class="flex flex-col gap-3">
+                <div class="lg:text-end pt-2 lg:pt-0">
+                  <p class="text-sm text-[#666666]">3 noches, desde</p>
+                  <p class="text-xl text-[#22357F]">16,136 millas</p>
+                </div>
+                <a href=""
+                  class="text-white bg-[#2196F3] w-full lg:w-fit h-[36px] rounded-[36px] px-[22px] flex items-center justify-center gap-2 uppercase shadow-md">
+                  <span>Seleccionar</span>
+                  <i data-lucide="chevron-right"></i>
+                </a>
+              </div>
+            </div>
+            <button
+              class="text-[#2196F3] border !border-[#8CC7F9] h-[36px] rounded-[36px] px-[22px] flex items-center justify-center gap-2 w-full">
+              <span class="uppercase text-[15px]">Mostrar 2 habitaciones más</span>
+              <i data-lucide="chevron-right"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- footer -->
+  <footer class="bg-[#142973] h-[180px] w-100"></footer>
+
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-xl">
+      <div class="modal-content relative rounded-2xl">
+        <img class="w-full h-full object-cover rounded-2xl" src="./img/mapa-modal.png" alt="">
+        <button type="button" class="btn-close absolute right-4 top-4 bg-[#00000040] rounded-full p-2" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <script>
+    lucide.createIcons();
+
+    class ExpandableContent {
+      constructor(element) {
+        this.container = element;
+        this.content = element.querySelector('.content-wrapper');
+        this.gradient = element.querySelector('.gradient');
+        this.button = element.querySelector('.toggle-button');
+        this.buttonText = element.querySelector('.button-text');
+        this.buttonIcon = element.querySelector('.button-icon');
+        this.isExpanded = false;
+        this.initialHeight = 150;
+
+        this.init();
+      }
+
+      init() {
+        this.button.addEventListener('click', () => this.toggle());
+      }
+
+      toggle() {
+        this.isExpanded = !this.isExpanded;
+
+        if (this.isExpanded) {
+          this.expand();
+        } else {
+          this.collapse();
+        }
+      }
+
+      expand() {
+        this.content.style.maxHeight = `${this.content.scrollHeight}px`;
+        this.gradient.style.display = 'none';
+        this.buttonText.textContent = 'Ver menos información';
+        this.buttonIcon.style.transform = 'rotate(180deg)';
+        this.buttonIcon.style.transition = 'transform 0.3s ease';
+      }
+
+      collapse() {
+        this.content.style.maxHeight = `${this.initialHeight}px`;
+        this.gradient.style.display = 'block';
+        this.buttonText.textContent = 'Ver más información';
+        this.buttonIcon.style.transform = 'rotate(0deg)';
+      }
+    }
+
+    document.querySelectorAll('.expandable-content').forEach(element => {
+      new ExpandableContent(element);
+    });
+
+    // Variables globales
+    const modal = document.getElementById('modal');
+    const modalImage = document.getElementById('modalImage');
+    const closeModal = document.getElementById('closeModal');
+    const prevButton = document.getElementById('prevButton');
+    const nextButton = document.getElementById('nextButton');
+    const gallery = document.getElementById('gallery');
+    let currentImageIndex = 0;
+    const images = document.querySelectorAll('#gallery img');
+
+    // Función para abrir el modal
+    function openModal(index) {
+      currentImageIndex = index;
+      modalImage.src = images[index].src;
+      modal.classList.remove('hidden');
+      modal.classList.add('flex');
+      updateNavigationButtons();
+    }
+
+    // Función para cerrar el modal
+    function closeModalHandler() {
+      modal.classList.add('hidden');
+      modal.classList.remove('flex');
+    }
+
+    // Función para actualizar los botones de navegación
+    function updateNavigationButtons() {
+      prevButton.style.display = currentImageIndex === 0 ? 'none' : 'block';
+      nextButton.style.display = currentImageIndex === images.length - 1 ? 'none' : 'block';
+    }
+
+    // Función para navegar a la imagen anterior
+    function showPreviousImage() {
+      if (currentImageIndex > 0) {
+        currentImageIndex--;
+        modalImage.src = images[currentImageIndex].src;
+        updateNavigationButtons();
+      }
+    }
+
+    // Función para navegar a la siguiente imagen
+    function showNextImage() {
+      if (currentImageIndex < images.length - 1) {
+        currentImageIndex++;
+        modalImage.src = images[currentImageIndex].src;
+        updateNavigationButtons();
+      }
+    }
+
+    // Event Listeners
+    images.forEach((img, index) => {
+      img.addEventListener('click', () => openModal(index));
+    });
+
+    closeModal.addEventListener('click', closeModalHandler);
+    prevButton.addEventListener('click', showPreviousImage);
+    nextButton.addEventListener('click', showNextImage);
+
+    // Cerrar modal con tecla Escape
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') closeModalHandler();
+      if (e.key === 'ArrowLeft') showPreviousImage();
+      if (e.key === 'ArrowRight') showNextImage();
+    });
+
+    // Cerrar modal al hacer clic fuera de la imagen
+    modal.addEventListener('click', (e) => {
+      if (e.target === modal) closeModalHandler();
+    });
+  </script>
+</body>
+
+</html>

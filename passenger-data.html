@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- header -->
+    <header class="bg-[#142973] h-[80px] w-100"></header>
+
+    <!-- body -->
+    <section class="bg-[#F7F9FF] !pb-10 !pt-4 md:!py-12 lg:min-h-[calc(100vh-80px)]">
+        <div class="container mx-auto">
+            <div class="flex items-center justify-start">
+            </div>
+            <div class="flex flex-col md:flex-row">
+                <div class="md:min-w-[60%] xl:min-w-[70%] xl:!pr-20">
+                    <a class="flex items-center gap-1 text-[#0079C1] cursor-pointer mb-6" href="./detail-flight-summary.html">
+                        <i data-lucide="chevron-left"></i>
+                        <span>Volver</span>
+                    </a>
+                    <div>
+                        <h1 class="text-2xl !mb-6">Información de contacto</h1>
+
+                        <div class="bg-white !p-6 !rounded-xl !border-0 !mb-6">
+                            <div class="grid grid-cols-1 lg:grid-cols-2 gap-4">
+                                <div class="w-full">
+                                    <div class="input-wrapper w-full">
+                                        <input type="text" id="name" class="input-field placeholder-transparent" placeholder=" " required />
+                                        <label for="name" class="input-label">Email</label>
+                                    </div>
+                                </div>
+                                <div class="w-full">
+                                    <div class="input-wrapper w-full">
+                                        <input type="text" id="name" class="input-field placeholder-transparent" placeholder=" " required />
+                                        <label for="name" class="input-label">Confirmar tu email</label>
+                                    </div>
+                                </div>
+                                <div class="w-full">
+                                    <div class="input-wrapper w-full">
+                                        <input type="text" id="name" class="input-field placeholder-transparent" placeholder=" " required />
+                                        <label for="name" class="input-label">Teléfono</label>
+                                    </div>
+                                </div>
+                                <div class="w-full">
+                                    <div class="input-wrapper w-full">
+                                        <input type="text" id="name" class="input-field placeholder-transparent" placeholder=" " required />
+                                        <label for="name" class="input-label">Cod. país</label>
+                                    </div>
+                                </div>
+                                <div class="w-full">
+                                    <div class="input-wrapper w-full">
+                                        <input type="text" id="name" class="input-field placeholder-transparent" placeholder=" " required />
+                                        <label for="name" class="input-label">Cod. área</label>
+                                    </div>
+                                </div>
+                                <div class="w-full">
+                                    <div class="input-wrapper w-full">
+                                        <input type="text" id="name" class="input-field placeholder-transparent" placeholder=" " required />
+                                        <label for="name" class="input-label">Número</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <h1 class="text-2xl !mb-6">Datos de los pasajeros</h1>
+
+                        <div class="accordion accordion-flush" id="accordionPanelsStayOpenExample">
+                            <div class="bg-white !p-6 !rounded-xl !border-0 accordion-item !mb-6">
+                                <h2 class="accordion-header">
+                                    <button class="!bg-transparent !p-0 !shadow-none !outline-none accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+                                        <span class="text-[#142973] text-lg font-semibold">Adulto 1</span>
+                                    </button>
+                                </h2>
+                                <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show">
+                                    <div class="accordion-body !px-0">
+                                        <div class="grid grid-cols-1 lg:grid-cols-2 gap-4">
+                                            <div class="w-full">
+                                                <div class="input-wrapper w-full">
+                                                    <input type="text" id="name" class="input-field placeholder-transparent" placeholder=" " required />
+                                                    <label for="name" class="input-label">Nombres</label>
+                                                </div>
+                                            </div>
+                                            <div class="w-full">
+                                                <div class="input-wrapper w-full">
+                                                    <input type="text" id="name" class="input-field placeholder-transparent" placeholder=" " required />
+                                                    <label for="name" class="input-label">Apellido Paterno</label>
+                                                </div>
+                                            </div>
+                                            <div class="w-full">
+                                                <div class="input-wrapper w-full">
+                                                    <input type="text" id="name" class="input-field placeholder-transparent" placeholder=" " required />
+                                                    <label for="name" class="input-label">Apellido Materno</label>
+                                                </div>
+                                            </div>
+                                            <div class="w-full">
+                                                <div class="input-wrapper w-full">
+                                                    <input type="date" id="fetch" class="input-field placeholder-transparent" placeholder=" " required />
+                                                    <label for="fetch" class="input-label">Fecha de nacimiento</label>
+                                                </div>
+                                            </div>
+                                            <div class="w-full">
+                                                <div class="select-wrapper w-full">
+                                                    <div class="relative">
+                                                        <select class="select-field outline-none">
+                                                            <option value="">Seleccione</option>
+                                                            <option value="">Masculino</option>
+                                                            <option value="">Femenino</option>
+                                                        </select>
+                                                        <i data-lucide="chevron-down" class="absolute right-[14px] pointer-events-none bottom-[14px] bg-white"></i>
+                                                    </div>
+                                                    <label class="select-label" for="">Género</label>
+                                                </div>
+                                            </div>
+                                            <div class="w-full">
+                                                <div class="select-wrapper w-full">
+                                                    <div class="relative">
+                                                        <select class="select-field outline-none">
+                                                            <option value="">Seleccione</option>
+                                                            <option value="">DNI</option>
+                                                            <option value="">RUC</option>
+                                                            <option value="">Cédula de Identidad</option>
+                                                        </select>
+                                                        <i data-lucide="chevron-down" class="absolute right-[14px] pointer-events-none bottom-[14px] bg-white"></i>
+                                                    </div>
+                                                    <label class="select-label" for="">Nacionalidad</label>
+                                                </div>
+                                            </div>
+                                            <div class="w-full">
+                                                <div class="select-wrapper w-full">
+                                                    <div class="relative">
+                                                        <select class="select-field outline-none">
+                                                            <option value="">Seleccione</option>
+                                                            <option value="">DNI</option>
+                                                            <option value="">RUC</option>
+                                                            <option value="">Cédula de Identidad</option>
+                                                        </select>
+                                                        <i data-lucide="chevron-down" class="absolute right-[14px] pointer-events-none bottom-[14px] bg-white"></i>
+                                                    </div>
+                                                    <label class="select-label" for="">Tipo de documento</label>
+                                                </div>
+                                            </div>
+                                            <div class="w-full">
+                                                <div class="input-wrapper w-full">
+                                                    <input type="text" id="nroDocu" class="input-field placeholder-transparent" placeholder=" " required />
+                                                    <label for="nroDocu" class="input-label">Número de documento</label>
+                                                </div>
+                                            </div>
+                                            <div class="w-full">
+                                                <div class="select-wrapper w-full">
+                                                    <div class="relative">
+                                                        <select class="select-field outline-none">
+                                                            <option value="">Seleccione</option>
+                                                            <option value="">DNI</option>
+                                                            <option value="">RUC</option>
+                                                            <option value="">Cédula de Identidad</option>
+                                                        </select>
+                                                        <i data-lucide="chevron-down" class="absolute right-[14px] pointer-events-none bottom-[14px] bg-white"></i>
+                                                    </div>
+                                                    <label class="select-label" for="">País emisor</label>
+                                                </div>
+                                            </div>
+                                            <div class="w-full">
+                                                <div class="input-wrapper w-full">
+                                                    <input type="date" id="fetch" class="input-field placeholder-transparent" placeholder=" " required />
+                                                    <label for="fetch" class="input-label">Válido hasta</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="bg-white !p-6 !rounded-xl !border-0 accordion-item !mb-6">
+                                <h2 class="accordion-header">
+                                    <button class="!bg-transparent !p-0 !shadow-none !outline-none accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="true" aria-controls="panelsStayOpen-collapseTwo">
+                                        <span class="text-[#142973] text-lg font-semibold">Adulto 2</span>
+                                    </button>
+                                </h2>
+                                <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse show">
+                                    <div class="accordion-body !px-0">
+                                        <div class="grid grid-cols-1 lg:grid-cols-2 gap-4">
+                                            <div class="w-full">
+                                                <div class="input-wrapper w-full">
+                                                    <input type="text" id="name" class="input-field placeholder-transparent" placeholder=" " required />
+                                                    <label for="name" class="input-label">Nombres</label>
+                                                </div>
+                                            </div>
+                                            <div class="w-full">
+                                                <div class="input-wrapper w-full">
+                                                    <input type="text" id="name" class="input-field placeholder-transparent" placeholder=" " required />
+                                                    <label for="name" class="input-label">Apellido Paterno</label>
+                                                </div>
+                                            </div>
+                                            <div class="w-full">
+                                                <div class="input-wrapper w-full">
+                                                    <input type="text" id="name" class="input-field placeholder-transparent" placeholder=" " required />
+                                                    <label for="name" class="input-label">Apellido Materno</label>
+                                                </div>
+                                            </div>
+                                            <div class="w-full">
+                                                <div class="input-wrapper w-full">
+                                                    <input type="date" id="fetch" class="input-field placeholder-transparent" placeholder=" " required />
+                                                    <label for="fetch" class="input-label">Fecha de nacimiento</label>
+                                                </div>
+                                            </div>
+                                            <div class="w-full">
+                                                <div class="select-wrapper w-full">
+                                                    <div class="relative">
+                                                        <select class="select-field outline-none">
+                                                            <option value="">Seleccione</option>
+                                                            <option value="">Masculino</option>
+                                                            <option value="">Femenino</option>
+                                                        </select>
+                                                        <i data-lucide="chevron-down" class="absolute right-[14px] pointer-events-none bottom-[14px] bg-white"></i>
+                                                    </div>
+                                                    <label class="select-label" for="">Género</label>
+                                                </div>
+                                            </div>
+                                            <div class="w-full">
+                                                <div class="select-wrapper w-full">
+                                                    <div class="relative">
+                                                        <select class="select-field outline-none">
+                                                            <option value="">Seleccione</option>
+                                                            <option value="">DNI</option>
+                                                            <option value="">RUC</option>
+                                                            <option value="">Cédula de Identidad</option>
+                                                        </select>
+                                                        <i data-lucide="chevron-down" class="absolute right-[14px] pointer-events-none bottom-[14px] bg-white"></i>
+                                                    </div>
+                                                    <label class="select-label" for="">Nacionalidad</label>
+                                                </div>
+                                            </div>
+                                            <div class="w-full">
+                                                <div class="select-wrapper w-full">
+                                                    <div class="relative">
+                                                        <select class="select-field outline-none">
+                                                            <option value="">Seleccione</option>
+                                                            <option value="">DNI</option>
+                                                            <option value="">RUC</option>
+                                                            <option value="">Cédula de Identidad</option>
+                                                        </select>
+                                                        <i data-lucide="chevron-down" class="absolute right-[14px] pointer-events-none bottom-[14px] bg-white"></i>
+                                                    </div>
+                                                    <label class="select-label" for="">Tipo de documento</label>
+                                                </div>
+                                            </div>
+                                            <div class="w-full">
+                                                <div class="input-wrapper w-full">
+                                                    <input type="text" id="name" class="input-field placeholder-transparent" placeholder=" " required />
+                                                    <label for="name" class="input-label">Número de documento</label>
+                                                </div>
+                                            </div>
+                                            <div class="w-full">
+                                                <div class="select-wrapper w-full">
+                                                    <div class="relative">
+                                                        <select class="select-field outline-none">
+                                                            <option value="">Seleccione</option>
+                                                            <option value="">DNI</option>
+                                                            <option value="">RUC</option>
+                                                            <option value="">Cédula de Identidad</option>
+                                                        </select>
+                                                        <i data-lucide="chevron-down" class="absolute right-[14px] pointer-events-none bottom-[14px] bg-white"></i>
+                                                    </div>
+                                                    <label class="select-label" for="">País emisor</label>
+                                                </div>
+                                            </div>
+                                            <div class="w-full">
+                                                <div class="input-wrapper w-full">
+                                                    <input type="date" id="fetch" class="input-field placeholder-transparent" placeholder=" " required />
+                                                    <label for="fetch" class="input-label">Válido hasta</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="!mb-10">
+                            <div>
+                                <div class="box-check">
+                                    <input class="box-check-input" id="terminos" name="terminos" type="checkbox">
+                                    <label class="box-check-label text-sm" for="terminos">
+                                        <span>He leído y acepto los
+                                            <a href="#" class="mx-[2px] text-[#1890FF] underline font-semibold">Términos y condiciones de la aerolínea</a>
+                                            y de la
+                                            <a href="#" class="mx-[2px] text-[#1890FF] underline font-semibold">agencia de viajes</a>
+                                        </span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="md:min-w-[40%] xl:min-w-[30%]">
+                    <div class="sticky top-0 py-6 md:p-6 bg-[#F7F9FF]">
+                        <div class="flex items-start gap-3 pb-6">
+                            <div class="flex items-center justify-center min-w-[48px] h-[48px] bg-[#CFE5FF] rounded-full">
+                                <i data-lucide="plane-takeoff" class="text-[#142973]"></i>
+                            </div>
+                            <div class="w-full">
+                                <p class="text-sm">Vuelo Ida<br>Guayaquil - Quito, Jue 01 Ago, 5:00 am</p>
+                                <div class="flex items-center justify-between">
+                                    <p class="text-sm">Basic</p>
+                                    <p class="text-sm">16,136 Millas</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-3 pb-6">
+                            <div class="flex items-center justify-center min-w-[48px] h-[48px] bg-[#CFE5FF] rounded-full">
+                                <i data-lucide="plane-landing" class="text-[#142973]"></i>
+                            </div>
+                            <div class="w-full">
+                                <p class="text-sm">Vuelo Regreso<br>Quito - Guayaquil, Sáb 10 Ag0, 5:00 am</p>
+                                <div class="flex items-center justify-between">
+                                    <p class="text-sm">Light</p>
+                                    <p class="text-sm">16,136 Millas</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="border-t border-[#E1E6EF]">
+                            <div class="flex items-center justify-between !py-4">
+                                <p class="text-sm">TOTAL</p>
+                                <p class="text-sm">20,911 Millas </p>
+                            </div>
+                        </div>
+                        <div class="bg-[#E5F6FD] px-4 py-2 rounded-md flex !gap-2 !mb-4 !mt-4">
+                            <i data-lucide="badge-info" class="text-[#0288D1] min-w-[22px]"></i>
+                            <p class="text-[#014361] text-sm">En caso necesite puntos adicionales comunicarse a nuestro call center 123 - 456</p>
+                        </div>
+                        <a href="./thank.html" class="w-full bg-[#0079C1] flex items-center justify-center h-[42px] rounded-[42px] hover:bg-[#1484C6] uppercase">
+                            <span class="font-semibold text-white text-[15px]">continuar</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer class="bg-[#142973] h-[180px] w-100"></footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>
+        lucide.createIcons();
+
+        const showButton = document.querySelector(".showButton");
+        const showButton2 = document.querySelector(".showButton2");
+        const hideButton = document.querySelector(".hideButton");
+        const element = document.querySelector(".myElement");
+
+        showButton.onclick = function() {
+            element.classList.remove("hidden");
+        };
+
+        showButton2.onclick = function() {
+            element.classList.remove("hidden");
+        };
+
+        hideButton.onclick = function() {
+            element.classList.add("hidden");
+        };
+
+    </script>
+</body>
+
+</html>
