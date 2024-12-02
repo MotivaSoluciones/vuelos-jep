@@ -93,7 +93,7 @@ select.input-field {
 .g-nav--home .nav-link:hover,
 .g-nav--home .nav-link:focus {
   border: 0;
-  border-bottom: 2px solid #0079C1;
+  border-bottom: 2px solid #F39200 ;
   background-color: white;
   border-radius: 0;
 }
