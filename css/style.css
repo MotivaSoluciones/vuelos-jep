@@ -1,5 +1,12 @@
+@font-face {
+    font-family: 'FiraSans-Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('FiraSans-Regular'), url('FiraSans-Regular.ttf') format('truetype');
+}
+
 body {
-  font-family: "Lexend", sans-serif;
+  font-family: "FiraSans-Regular", sans-serif;
 }
 
 /* Input */
@@ -85,7 +92,7 @@ select.input-field {
   align-items: center;
   justify-content: center;
   border-bottom: 2px solid transparent;
-  color: #49454F;
+  color: #555;
   transition: none;
 }
 
