@@ -124,7 +124,7 @@ select.input-field {
 
 /* Dropdown */
 .dropdown-menu {
-  --bs-dropdown-link-active-color: #212529;
+  --bs-dropdown-link-active-color: #555;
   --bs-dropdown-link-active-bg: #f8f9fa;
 }
 
@@ -231,7 +231,7 @@ select.input-field {
   right: 30%;
   position: absolute;
   border-radius: 5px;
-  background: #2196F3;
+  background: #01C44F;
 }
 .range-input {
   position: relative;
@@ -250,7 +250,7 @@ select.input-field {
   height: 20px;
   width: 20px;
   border-radius: 50%;
-  border: 3px solid #2196F3;
+  border: 3px solid #01C44F;
   background: #fff;
   pointer-events: auto;
   -webkit-appearance: none;
@@ -259,7 +259,7 @@ select.input-field {
   height: 15px;
   width: 15px;
   border-radius: 50%;
-  border: 3px solid #2196F3;
+  border: 3px solid #01C44F;
   background: #fff;
   pointer-events: auto;
   -moz-appearance: none;
