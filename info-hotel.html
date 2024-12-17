@@ -186,7 +186,7 @@
                   <p class="text-sm text-[#666666]">3 noches, desde</p>
                   <p class="text-xl text-[#f59300]">16,136 puntos</p>
                 </div>
-                <a href="passenger-data-hotel.html"
+                <a data-bs-toggle="modal" data-bs-target="#modalPuntosInsuficientes"
                   class="text-white bg-[#f59300] w-full lg:w-fit h-[36px] rounded-[36px] px-[22px] flex items-center justify-center gap-2 uppercase shadow-md">
                   <span>Seleccionar</span>
                   <i data-lucide="chevron-right"></i>
@@ -213,7 +213,7 @@
                   <p class="text-sm text-[#666666]">3 noches, desde</p>
                   <p class="text-xl text-[#f59300]">14,136 puntos</p>
                 </div>
-                <a href="passenger-data-hotel.html"
+                <a data-bs-toggle="modal" data-bs-target="#modalPuntosInsuficientes"
                   class="text-white bg-[#f59300] w-full lg:w-fit h-[36px] rounded-[36px] px-[22px] flex items-center justify-center gap-2 uppercase shadow-md">
                   <span>Seleccionar</span>
                   <i data-lucide="chevron-right"></i>
@@ -267,7 +267,7 @@
                   <p class="text-sm text-[#666666]">3 noches, desde</p>
                   <p class="text-xl text-[#f59300]">16,136 puntos</p>
                 </div>
-                <a href="passenger-data-hotel.html"
+                <a data-bs-toggle="modal" data-bs-target="#modalPuntosInsuficientes"
                   class="text-white bg-[#f59300] w-full lg:w-fit h-[36px] rounded-[36px] px-[22px] flex items-center justify-center gap-2 uppercase shadow-md">
                   <span>Seleccionar</span>
                   <i data-lucide="chevron-right"></i>
@@ -294,7 +294,7 @@
                   <p class="text-sm text-[#666666]">3 noches, desde</p>
                   <p class="text-xl text-[#f59300]">16,136 puntos</p>
                 </div>
-                <a href="passenger-data-hotel.html"
+                <a data-bs-toggle="modal" data-bs-target="#modalPuntosInsuficientes"
                   class="text-white bg-[#f59300] w-full lg:w-fit h-[36px] rounded-[36px] px-[22px] flex items-center justify-center gap-2 uppercase shadow-md">
                   <span>Seleccionar</span>
                   <i data-lucide="chevron-right"></i>
@@ -323,7 +323,28 @@
       </div>
     </div>
   </div>
-
+    <div class="modal fade" id="modalPuntosInsuficientes" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable modal-fullscreen-md-down ">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="text-[#666] font-semibold" id="staticBackdropLabel">Puntos insuficientes</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="bg-[#f1f1f1] px-4 py-2 rounded-md flex !gap-2 !mb-4 !mt-4">
+                        <i data-lucide="badge-info" class="text-[#007E32] min-w-[22px]"></i>
+                        <p class="text-[#666] text-md">Lo sentimos, no puedes elegir esta habitación ya que no cuentas con puntos suficientes.<br>
+                            Puedes elegir una habitación de menor valor o si necesitas puntos adicionales para efectuar tu canje, cómpralos a través de nuestro call center 07 413 5000 o en cualquiera de nuestras Agencias JEP a nivel nacional</p>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="w-full flex items-center justify-center h-[42px] bg-[#f39200] rounded-[5px]" data-bs-dismiss="modal">
+                        <span class="text-white font-semibold text-[15px] uppercase">entendido</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
     crossorigin="anonymous"></script>
