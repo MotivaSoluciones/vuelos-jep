@@ -1,29 +1,26 @@
 <!DOCTYPE html>
 <html>
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.tailwindcss.com"></script>
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
-      crossorigin="anonymous"
-    />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
     <link rel="stylesheet" type="text/css" href="css/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
-  </head>
-  <body>
+</head>
+
+<body>
     <!-- header -->
-    <header class="bg-[#2e2e2e] h-[80px] w-100"></header>
+    <header class="bg-[#2e2e2e] h-[105px] w-100"> <img src="img/header.png"></header>
 
     <!-- body -->
     <section class="">
-      <div class="bg-[#F7F9FF] lg:bg-[#FFFFFF] py-[10px]">
-        <div class="container mx-auto">
-          <div class="items-center hidden lg:flex">
+        <div class="bg-[#F7F9FF] lg:bg-[#FFFFFF] py-[10px]">
+            <div class="container mx-auto">
+                <div class="items-center hidden lg:flex">
                     <div class="flex items-center lg:gap-3 xl:gap-5 w-full border-r border-[#f59300] h-[32px] min-w-[250px]" ˘>
                         <div class="flex items-center gap-2">
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="plane-takeoff" class="lucide lucide-plane-takeoff text-[#f59300]">
@@ -86,752 +83,614 @@
                         </button>
                     </div>
                 </div>
-          <div class="shadow-md rounded-md !p-3 flex lg:hidden items-center bg-white cursor-pointer showButton2">
-            <div class="flex flex-col w-full border-r border-[#C5C5D2]">
-              <span class="text-[#f39200]">Guayaquil > Quito</span>
-              <span class="text-sm">Jue, 01 ago. - Sáb, 10 ago.</span>
-            </div>
-            <div class="flex items-center gap-2 !pl-3">
-              <i data-lucide="users" class="text-[#f39200]"></i>
-              <span>1</span>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="myElement hidden mt-[-88px] lg:mt-[-56px] bg-white relative rounded-b-2xl">
-        <div class="container mx-auto">
-          <div class="w-full pt-2 pb-6">
-            <div class="tab-content" id="myTabContent">
-              <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
-                <div class="flex items-center justify-between">
-                  <div class="flex items-center gap-x-10 gap-y-5 py-3 flex-wrap	lg:flex-nowrap">
-                    <div class="dropdown">
-                      <button class="dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        Ida y Vuelta
-                      </button>
-                      <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#">Ida y Vuelta</a></li>
-                        <li><a class="dropdown-item" href="#">Solo ida</a></li>
-                      </ul>
+                <div class="shadow-md rounded-md !p-3 flex lg:hidden items-center bg-white cursor-pointer showButton2">
+                    <div class="flex flex-col w-full border-r border-[#C5C5D2]">
+                        <span class="text-[#f39200]">Guayaquil > Quito</span>
+                        <span class="text-sm">Jue, 01 ago. - Sáb, 10 ago.</span>
                     </div>
-                    <div class="dropdown">
-                      <button class="dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        Económico
-                      </button>
-                      <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#">Económico</a></li>
-                        <li><a class="dropdown-item" href="#">Ejecutivo</a></li>
-                      </ul>
+                    <div class="flex items-center gap-2 !pl-3">
+                        <i data-lucide="users" class="text-[#f39200]"></i>
+                        <span>1</span>
                     </div>
-                    <div class="dropdown">
-                      <button class="dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        1 pasajero
-                      </button>
-                      <div class="dropdown-menu">
-                        <div class="flex items-center justify-between h-[60px] px-4 w-[280px]">
-                          <div>
-                            <p class="text-sm text-black">Adultos</p>
-                            <p class="text-xs text-black">12 a más años</p>
-                          </div>
-                          <div class="flex items-center">
-                            <i data-lucide="circle-minus" class="text-[#f39200] cursor-pointer opacity-50"></i>
-                            <span class="w-[43px] text-center text-sm text-[#49454F]">1</span>
-                            <i data-lucide="circle-plus" class="text-[#f39200] cursor-pointer"></i>
-                          </div>
-                        </div>
-                        <div class="border-t border-[#E0E0E0] pb-1 mt-1"></div>
-                        <div class="flex items-center justify-between h-[60px] px-4 w-[280px]">
-                          <div>
-                            <p class="text-sm text-black">Niños</p>
-                            <p class="text-xs text-black">De 2 a 11 años</p>
-                          </div>
-                          <div class="flex items-center">
-                            <i data-lucide="circle-minus" class="text-[#f39200] cursor-pointer opacity-50"></i>
-                            <span class="w-[43px] text-center text-sm text-[#49454F]">1</span>
-                            <i data-lucide="circle-plus" class="text-[#f39200] cursor-pointer"></i>
-                          </div>
-                        </div>
-                        <div class="border-t border-[#E0E0E0] pb-1 mt-1"></div>
-                        <div class="flex items-center justify-between h-[60px] px-4 w-[280px]">
-                          <div>
-                            <p class="text-sm text-black">Bebés</p>
-                            <p class="text-xs text-black">Menores de 2 años</p>
-                          </div>
-                          <div class="flex items-center">
-                            <i data-lucide="circle-minus" class="text-[#f39200] cursor-pointer opacity-50"></i>
-                            <span class="w-[43px] text-center text-sm text-[#49454F]">1</span>
-                            <i data-lucide="circle-plus" class="text-[#f39200] cursor-pointer"></i>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <a class="flex items-center gap-1 text-[#007E32] cursor-pointer hideButton">
-                    <span>Cerrar</span>
-                    <i data-lucide="x"></i>
-                  </a>
                 </div>
-                <div class="flex items-end gap-6 flex-col lg:flex-row">
-                  <div class="w-full">
-                    <div class="input-wrapper w-full">
-                      <input
-                        type="text"
-                        id="origen"
-                        class="input-field placeholder-transparent"
-                        placeholder=" "
-                        required
-                        list="datalistOrigen"
-                      />
-                      <label for="origen" class="input-label">Origen</label>
-                      <datalist id="datalistOrigen">
-                        <option value="San Francisco">
-                        <option value="New York">
-                        <option value="Seattle">
-                        <option value="Los Angeles">
-                        <option value="Chicago">
-                      </datalist>
-                    </div>
-                  </div>
-                  <div class="w-full">
-                    <div class="input-wrapper w-full">
-                      <input
-                        type="text"
-                        id="destino"
-                        class="input-field placeholder-transparent"
-                        placeholder=" "
-                        required
-                        list="datalistDestino"
-                      />
-                      <label for="destino" class="input-label">Destino</label>
-                      <datalist id="datalistDestino">
-                        <option value="San Francisco">
-                        <option value="New York">
-                        <option value="Seattle">
-                        <option value="Los Angeles">
-                        <option value="Chicago">
-                      </datalist>
-                    </div>
-                  </div>
-                  <div class="w-full">
-                    <div class="input-wrapper w-full">
-                      <input
-                        type="date"
-                        id="ida"
-                        class="input-field placeholder-transparent"
-                        placeholder=" "
-                        required
-                      />
-                      <label for="ida" class="input-label">Fecha Ida</label>
-                    </div>
-                  </div>
-                  <div class="w-full">
-                    <div class="input-wrapper w-full">
-                      <input
-                        type="date"
-                        id="regreso"
-                        class="input-field placeholder-transparent"
-                        placeholder=" "
-                        required
-                      />
-                      <label for="regreso" class="input-label">Fecha Regreso</label>
-                    </div>
-                  </div>
-                  <button class="w-full bg-[#f39200] flex items-center justify-center h-[56px] rounded hover:bg-[#1484C6]">
-                    <span class="font-semibold text-white">BUSCAR</span>
-                  </button>
-                </div>
-              </div>
-              <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">...</div>
             </div>
-          </div>
         </div>
-      </div>
+        <div class="myElement hidden mt-[-88px] lg:mt-[-56px] bg-white relative rounded-b-2xl">
+            <div class="container mx-auto">
+                <div class="w-full pt-2 pb-6">
+                    <div class="tab-content" id="myTabContent">
+                        <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
+                            <div class="flex items-center justify-between">
+                                <div class="flex items-center gap-x-10 gap-y-5 py-3 flex-wrap	lg:flex-nowrap">
+                                    <div class="dropdown">
+                                        <button class="dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                            Ida y Vuelta
+                                        </button>
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item" href="#">Ida y Vuelta</a></li>
+                                            <li><a class="dropdown-item" href="#">Solo ida</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="dropdown">
+                                        <button class="dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                            Económico
+                                        </button>
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item" href="#">Económico</a></li>
+                                            <li><a class="dropdown-item" href="#">Ejecutivo</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="dropdown">
+                                        <button class="dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                            1 pasajero
+                                        </button>
+                                        <div class="dropdown-menu">
+                                            <div class="flex items-center justify-between h-[60px] px-4 w-[280px]">
+                                                <div>
+                                                    <p class="text-sm text-black">Adultos</p>
+                                                    <p class="text-xs text-black">12 a más años</p>
+                                                </div>
+                                                <div class="flex items-center">
+                                                    <i data-lucide="circle-minus" class="text-[#f39200] cursor-pointer opacity-50"></i>
+                                                    <span class="w-[43px] text-center text-sm text-[#49454F]">1</span>
+                                                    <i data-lucide="circle-plus" class="text-[#f39200] cursor-pointer"></i>
+                                                </div>
+                                            </div>
+                                            <div class="border-t border-[#E0E0E0] pb-1 mt-1"></div>
+                                            <div class="flex items-center justify-between h-[60px] px-4 w-[280px]">
+                                                <div>
+                                                    <p class="text-sm text-black">Niños</p>
+                                                    <p class="text-xs text-black">De 2 a 11 años</p>
+                                                </div>
+                                                <div class="flex items-center">
+                                                    <i data-lucide="circle-minus" class="text-[#f39200] cursor-pointer opacity-50"></i>
+                                                    <span class="w-[43px] text-center text-sm text-[#49454F]">1</span>
+                                                    <i data-lucide="circle-plus" class="text-[#f39200] cursor-pointer"></i>
+                                                </div>
+                                            </div>
+                                            <div class="border-t border-[#E0E0E0] pb-1 mt-1"></div>
+                                            <div class="flex items-center justify-between h-[60px] px-4 w-[280px]">
+                                                <div>
+                                                    <p class="text-sm text-black">Bebés</p>
+                                                    <p class="text-xs text-black">Menores de 2 años</p>
+                                                </div>
+                                                <div class="flex items-center">
+                                                    <i data-lucide="circle-minus" class="text-[#f39200] cursor-pointer opacity-50"></i>
+                                                    <span class="w-[43px] text-center text-sm text-[#49454F]">1</span>
+                                                    <i data-lucide="circle-plus" class="text-[#f39200] cursor-pointer"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <a class="flex items-center gap-1 text-[#007E32] cursor-pointer hideButton">
+                                    <span>Cerrar</span>
+                                    <i data-lucide="x"></i>
+                                </a>
+                            </div>
+                            <div class="flex items-end gap-6 flex-col lg:flex-row">
+                                <div class="w-full">
+                                    <div class="input-wrapper w-full">
+                                        <input type="text" id="origen" class="input-field placeholder-transparent" placeholder=" " required list="datalistOrigen" />
+                                        <label for="origen" class="input-label">Origen</label>
+                                        <datalist id="datalistOrigen">
+                                            <option value="San Francisco">
+                                            <option value="New York">
+                                            <option value="Seattle">
+                                            <option value="Los Angeles">
+                                            <option value="Chicago">
+                                        </datalist>
+                                    </div>
+                                </div>
+                                <div class="w-full">
+                                    <div class="input-wrapper w-full">
+                                        <input type="text" id="destino" class="input-field placeholder-transparent" placeholder=" " required list="datalistDestino" />
+                                        <label for="destino" class="input-label">Destino</label>
+                                        <datalist id="datalistDestino">
+                                            <option value="San Francisco">
+                                            <option value="New York">
+                                            <option value="Seattle">
+                                            <option value="Los Angeles">
+                                            <option value="Chicago">
+                                        </datalist>
+                                    </div>
+                                </div>
+                                <div class="w-full">
+                                    <div class="input-wrapper w-full">
+                                        <input type="date" id="ida" class="input-field placeholder-transparent" placeholder=" " required />
+                                        <label for="ida" class="input-label">Fecha Ida</label>
+                                    </div>
+                                </div>
+                                <div class="w-full">
+                                    <div class="input-wrapper w-full">
+                                        <input type="date" id="regreso" class="input-field placeholder-transparent" placeholder=" " required />
+                                        <label for="regreso" class="input-label">Fecha Regreso</label>
+                                    </div>
+                                </div>
+                                <button class="w-full bg-[#f39200] flex items-center justify-center h-[56px] rounded hover:bg-[#1484C6]">
+                                    <span class="font-semibold text-white">BUSCAR</span>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">...</div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
     <section class="bg-[#F7F9FF] !pb-10 !pt-4 md:!py-12 lg:min-h-[calc(100vh-140px)]">
-      <div class="container mx-auto mb-10">
-        <div class="flex md:items-center justify-between pb-4 md:pb-10 flex-col md:flex-row gap-2">
-          <h1 class="text-2xl">
-            Resumen de tu viaje
-          </h1>
+        <div class="container mx-auto mb-10">
+            <div class="flex md:items-center justify-between pb-4 md:pb-10 flex-col md:flex-row gap-2">
+                <h1 class="text-2xl">
+                    Resumen de tu viaje
+                </h1>
+            </div>
+
+            <div class="flex items-center gap-1 mb-4">
+                <img src="./img/icon-check.svg" alt="">
+                <p class="text-sm">Vuelo de Ida - Basic - Jue, 01 Ago </p>
+            </div>
+
+            <div class="shadow-md rounded-2xl !mb-5">
+                <div class="bg-white !p-4 md:!p-6 rounded-2xl flex items-end md:items-center flex-col lg:flex-row !gap-3 md:!gap-0">
+                    <div class="min-w-full lg:min-w-[75%]">
+                        <div class="flex flex-col gap-6">
+                            <div class="flex items-center gap-3">
+                                <p class="text-[#f39200] md:text-xl lg:text-2xl text-nowrap">
+                                    5:00 a.m. <span class="text-[#666666]">GYE</span>
+                                </p>
+                                <span class="w-full border-t border-[#C5C5D2]"></span>
+                                <div class="text-center text-nowrap">
+                                    <p class="text-sm text-[#666666] leading-tight">
+                                        Duración
+                                    </p>
+                                    <p class="text-sm text-[#666666] leading-tight">
+                                        1h 20 min
+                                    </p>
+                                </div>
+                                <span class="w-full border-t border-[#C5C5D2]"></span>
+                                <p class="text-[#f39200] md:text-xl lg:text-2xl text-nowrap">
+                                    6:20 a.m. <span class="text-[#666666]">UIO</span>
+                                </p>
+                            </div>
+                            <div class="flex items-center justify-between">
+                                <a class="text-[#007E32] text-sm" href="">Directo</a>
+                                <div class="flex items-center gap-1">
+                                    <p class="text-sm text-[#666666]">Operado por</p>
+                                    <img src="./img/iso-latam.png" alt="" />
+                                    <p class="text-sm text-[#666666]">LATAM Airlines</p>
+                                </div>
+                            </div>
+                        </div>
+                        <img src="img/MOCHILA.png" width="20" style="display: inline-block"><img src="img/CARRY-ON.png" style="display: inline-block" width="20"><img src="img/MALETA.png" style="display: inline-block" width="20">
+                    </div>
+                    <div class="min-w-full lg:min-w-[25%] text-end">
+                        <div class="flex flex-row-reverse lg:!flex-col items-center justify-between lg:items-end">
+                            <div>
+                                <p class="text-sm text-[#666666]">Ida y vuelta, desde</p>
+                                <p class="text-xl text-[#f39200] font-semibold">
+                                    16,136 puntos
+                                </p>
+                            </div>
+                            <a href="./detail-flight.html" class="text-[#4d4d4d] flex items-center justify-center border !border-[#4d4d4d] h-[36px] rounded-[5px] !px-3">
+                                <span>Editar</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
 
-        <div class="flex items-center gap-1 mb-4">
-          <img src="./img/icon-check.svg" alt="">
-          <p class="text-sm">Vuelo de Ida - Basic - Jue, 01 Ago </p>
+        <div class="container mx-auto">
+            <div class="flex md:items-center justify-between pb-4 md:pb-10 flex-col md:flex-row gap-2">
+                <h1 class="text-2xl">
+                    Elige un <span class="font-semibold">vuelo de vuelta</span>
+                </h1>
+                <div class="flex items-center gap-2">
+                    <span class="text-sm">Ordenado por:</span>
+                    <div class="dropdown">
+                        <button class="dropdown-toggle text-sm" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Precio
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Económico</a></li>
+                            <li><a class="dropdown-item" href="#">Ejecutivo</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </div>
 
-        <div class="shadow-md rounded-2xl !mb-5">
-          <div class="bg-white !p-4 md:!p-6 rounded-2xl flex items-end md:items-center flex-col lg:flex-row !gap-3 md:!gap-0">
-            <div class="min-w-full lg:min-w-[75%]">
-              <div class="flex flex-col gap-6">
-                <div class="flex items-center gap-3">
-                  <p class="text-[#f39200] md:text-xl lg:text-2xl text-nowrap">
-                    5:00 a.m. <span class="text-[#666666]">GYE</span>
-                  </p>
-                  <span class="w-full border-t border-[#C5C5D2]"></span>
-                  <div class="text-center text-nowrap">
-                    <p class="text-sm text-[#666666] leading-tight">
-                      Duración
-                    </p>
-                    <p class="text-sm text-[#666666] leading-tight">
-                      1h 20 min
-                    </p>
-                  </div>
-                  <span class="w-full border-t border-[#C5C5D2]"></span>
-                  <p class="text-[#f39200] md:text-xl lg:text-2xl text-nowrap">
-                    6:20 a.m. <span class="text-[#666666]">UIO</span>
-                  </p>
+        <div class="container mx-auto">
+            <div class="accordion accordion-flush" id="accordionExample">
+                <div class="shadow-md rounded-2xl !mb-5">
+                    <div class="bg-white !p-4 md:!p-6 rounded-2xl flex items-end md:items-center cursor-pointer flex-col lg:flex-row !gap-3 md:!gap-0" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-controls="collapseOne">
+                        <div class="min-w-full lg:min-w-[75%]">
+                            <div class="flex flex-col gap-6">
+                                <div class="flex items-center gap-3">
+                                    <p class="text-[#f39200] md:text-xl lg:text-2xl text-nowrap">
+                                        5:00 a.m. <span class="text-[#666666]">GYE</span>
+                                    </p>
+                                    <span class="w-full border-t border-[#C5C5D2]"></span>
+                                    <div class="text-center text-nowrap">
+                                        <p class="text-sm text-[#666666] leading-tight">
+                                            Duración
+                                        </p>
+                                        <p class="text-sm text-[#666666] leading-tight">
+                                            1h 20 min
+                                        </p>
+                                    </div>
+                                    <span class="w-full border-t border-[#C5C5D2]"></span>
+                                    <p class="text-[#f39200] md:text-xl lg:text-2xl text-nowrap">
+                                        6:20 a.m. <span class="text-[#666666]">UIO</span>
+                                    </p>
+                                </div>
+                                <div class="flex items-center justify-between">
+                                    <a class="text-[#007E32] text-sm" href="">Directo</a>
+                                    <div class="flex items-center gap-1">
+                                        <p class="text-sm text-[#666666]">Operado por</p>
+                                        <img src="./img/iso-latam.png" alt="" />
+                                        <p class="text-sm text-[#666666]">LATAM Airlines</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <img src="img/MOCHILA.png" width="20" style="display: inline-block"><img src="img/CARRY-ON.png" style="display: inline-block" width="20">
+                        </div>
+                        <div class="min-w-[25%] text-end">
+                            <p class="text-sm text-[#666666]">Ida y vuelta, desde</p>
+                            <p class="text-xl text-[#f39200] font-semibold">
+                                14,136 puntos
+                            </p>
+                        </div>
+                    </div>
+                    <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div class="!px-3 !pb-3 !pt-2 bg-[#F7F9FF] rounded-b-2xl">
+                            <div class="flex items-center justify-between pb-2 flex-wrap md:flex-nowrap">
+                                <p class="text-[#f39200] md:!pl-5 min-w-[50%] md:min-w-fit">LATAM - LA 2067</p>
+                                <div class="min-w-full md:min-w-fit">
+                                    <a class="flex items-center gap-1 text-[#007E32] cursor-pointer justify-end" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-controls="collapseOne">
+                                        <span>Cerrar</span>
+                                        <i data-lucide="x"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="flex gap-2 flex-col lg:flex-row">
+                                <div class="w-full shadow-md rounded-xl bg-white">
+                                    <div class="border-b !px-5 py-[10px] border-[#C5C5D2]">
+                                        <p class="text-[#f39200]">Basic</p>
+                                    </div>
+                                    <div class="!px-5 !py-4 flex flex-col gap-2">
+                                        <div class="flex items-start gap-2">
+                                            <img class="mt-[2px]" src="./img/icon-check.svg" alt="" />
+                                            <p class="text-[#212121] text-sm">
+                                                Bolso o mochila pequeña
+                                            </p>
+                                        </div>
+                                        <div class="flex items-start gap-2">
+                                            <img class="mt-[2px]" src="./img/icon-check.svg" alt="" />
+                                            <p class="text-[#212121] text-sm">
+                                                Equipaje de mano 10 Kg
+                                            </p>
+                                        </div>
+                                        <div class="flex items-start gap-2">
+                                            <img class="mt-[2px]" src="./img/icon-check.svg" alt="" />
+                                            <p class="text-[#212121] text-sm">
+                                                1 equipaje de bodega 23 Kg
+                                            </p>
+                                        </div>
+                                        <div class="flex items-start gap-2">
+                                            <img class="mt-[2px]" src="./img/icon-check.svg" alt="" />
+                                            <p class="text-[#212121] text-sm">
+                                                Cambio sin cargo + Diferencia de precio
+                                            </p>
+                                        </div>
+                                        <div class="flex items-start gap-2">
+                                            <img class="mt-[2px]" src="./img/icon-check.svg" alt="" />
+                                            <p class="text-[#212121] text-sm">
+                                                Selección de asiento Estándar
+                                            </p>
+                                        </div>
+                                        <div class="flex items-start gap-2">
+                                            <img class="mt-[2px]" src="./img/icon-check.svg" alt="" />
+                                            <p class="text-[#212121] text-sm">
+                                                Devolución antes de la salida del primer vuelo
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="!px-5 !py-4 text-end">
+                                        <p class="text-[#f39200]">14,136 puntos</p>
+                                    </div>
+                                    <div class="!px-5 !py-4">
+                                        <div class="flex justify-end items-center">
+                                            <a data-bs-toggle="modal" data-bs-target="#modalPuntosInsuficientes" class="w-full lg:w-[300px] text-[#fff] border flex items-center justify-center !bg-[#4D4D4D] h-[40px] rounded-md !px-3">
+                                                <span>ELEGIR</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="flex items-center justify-between">
-                  <a class="text-[#007E32] text-sm" href="">Directo</a>
-                  <div class="flex items-center gap-1">
-                    <p class="text-sm text-[#666666]">Operado por</p>
-                    <img src="./img/iso-latam.png" alt="" />
-                    <p class="text-sm text-[#666666]">LATAM Airlines</p>
-                  </div>
+
+                <div class="shadow-md rounded-2xl !mb-5">
+                    <div class="bg-white !p-4 md:!p-6 rounded-2xl flex items-end md:items-center cursor-pointer flex-col lg:flex-row !gap-3 md:!gap-0" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-controls="collapseTwo">
+                        <div class="min-w-full lg:min-w-[75%]">
+                            <div class="flex flex-col gap-6">
+                                <div class="flex items-center gap-3">
+                                    <p class="text-[#f39200] md:text-xl lg:text-2xl text-nowrap">
+                                        5:00 a.m. <span class="text-[#666666]">GYE</span>
+                                    </p>
+                                    <span class="w-full border-t border-[#C5C5D2]"></span>
+                                    <div class="text-center text-nowrap">
+                                        <p class="text-sm text-[#666666] leading-tight">
+                                            Duración
+                                        </p>
+                                        <p class="text-sm text-[#666666] leading-tight">
+                                            1h 20 min
+                                        </p>
+                                    </div>
+                                    <span class="w-full border-t border-[#C5C5D2]"></span>
+                                    <p class="text-[#f39200] md:text-xl lg:text-2xl text-nowrap">
+                                        6:20 a.m. <span class="text-[#666666]">UIO</span>
+                                    </p>
+                                </div>
+                                <div class="flex items-center justify-between pb-2">
+                                    <a class="text-[#007E32] text-sm" href="">Directo</a>
+                                    <div class="flex items-center gap-1">
+                                        <p class="text-sm text-[#666666]">Operado por</p>
+                                        <img src="./img/iso-avianca.png" alt="" />
+                                        <p class="text-sm text-[#666666]">Avianca Ecuador</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <img src="img/MOCHILA.png" width="20" style="display: inline-block"><img src="img/CARRY-ON.png" style="display: inline-block" width="20"><img src="img/MALETA.png" style="display: inline-block" width="20">
+                        </div>
+                        <div class="min-w-[25%] text-end">
+                            <p class="text-sm text-[#666666]">Ida y vuelta, desde</p>
+                            <p class="text-xl text-[#f39200] font-semibold">
+                                10,136 puntos
+                            </p>
+                        </div>
+                    </div>
+                    <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div class="!px-3 !pb-3 !pt-2 bg-[#F7F9FF] rounded-b-2xl">
+                            <div class="flex items-center justify-between pb-2 flex-wrap md:flex-nowrap">
+                                <p class="text-[#f39200] md:!pl-5 min-w-[50%] md:min-w-fit">LATAM - LA 2067</p>
+                                <div class="min-w-full md:min-w-fit">
+                                    <a class="flex items-center gap-1 text-[#007E32] cursor-pointer justify-end" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-controls="collapseTwo">
+                                        <span>Cerrar</span>
+                                        <i data-lucide="x"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="flex gap-2 flex-col lg:flex-row">
+                                <div class="w-full shadow-md rounded-xl bg-white">
+                                    <div class="border-b !px-5 py-[10px] border-[#C5C5D2]">
+                                        <p class="text-[#f39200]">Basic</p>
+                                    </div>
+                                    <div class="!px-5 !py-4 flex flex-col gap-2">
+                                        <div class="flex items-start gap-2">
+                                            <img class="mt-[2px]" src="./img/icon-check.svg" alt="" />
+                                            <p class="text-[#212121] text-sm">
+                                                Bolso o mochila pequeña
+                                            </p>
+                                        </div>
+                                        <div class="flex items-start gap-2">
+                                            <img class="mt-[2px]" src="./img/icon-check.svg" alt="" />
+                                            <p class="text-[#212121] text-sm">
+                                                Equipaje de mano 10 Kg
+                                            </p>
+                                        </div>
+                                        <div class="flex items-start gap-2">
+                                            <img class="mt-[2px]" src="./img/icon-check.svg" alt="" />
+                                            <p class="text-[#212121] text-sm">
+                                                1 equipaje de bodega 23 Kg
+                                            </p>
+                                        </div>
+                                        <div class="flex items-start gap-2">
+                                            <img class="mt-[2px]" src="./img/icon-check.svg" alt="" />
+                                            <p class="text-[#212121] text-sm">
+                                                Cambio sin cargo + Diferencia de precio
+                                            </p>
+                                        </div>
+                                        <div class="flex items-start gap-2">
+                                            <img class="mt-[2px]" src="./img/icon-check.svg" alt="" />
+                                            <p class="text-[#212121] text-sm">
+                                                Selección de asiento Estándar
+                                            </p>
+                                        </div>
+                                        <div class="flex items-start gap-2">
+                                            <img class="mt-[2px]" src="./img/icon-check.svg" alt="" />
+                                            <p class="text-[#212121] text-sm">
+                                                Devolución antes de la salida del primer vuelo
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="!px-5 !py-4 text-end">
+                                        <p class="text-[#f39200]">10,136 puntos</p>
+                                    </div>
+                                    <div class="!px-5 !py-4">
+                                        <div class="flex justify-end items-center">
+                                            <a href="./detail-flight-summary.html" class="w-full lg:w-[300px] text-[#fff] border flex items-center justify-center !bg-[#4D4D4D] h-[40px] rounded-md !px-3">
+                                                <span>ELEGIR</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-              </div>
+
+                <div class="shadow-md rounded-2xl !mb-5">
+                    <div class="bg-white !p-4 md:!p-6 rounded-2xl flex items-end md:items-center cursor-pointer flex-col lg:flex-row !gap-3 md:!gap-0" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-controls="collapseThree">
+                        <div class="min-w-full lg:min-w-[75%]">
+                            <div class="flex flex-col gap-6">
+                                <div class="flex items-center gap-3">
+                                    <p class="text-[#f39200] md:text-xl lg:text-2xl text-nowrap">
+                                        5:00 a.m. <span class="text-[#666666]">GYE</span>
+                                    </p>
+                                    <span class="w-full border-t border-[#C5C5D2]"></span>
+                                    <div class="text-center text-nowrap">
+                                        <p class="text-sm text-[#666666] leading-tight">
+                                            Duración
+                                        </p>
+                                        <p class="text-sm text-[#666666] leading-tight">
+                                            1h 20 min
+                                        </p>
+                                    </div>
+                                    <span class="w-full border-t border-[#C5C5D2]"></span>
+                                    <p class="text-[#f39200] md:text-xl lg:text-2xl text-nowrap">
+                                        6:20 a.m. <span class="text-[#666666]">UIO</span>
+                                    </p>
+                                </div>
+                                <div class="flex items-center justify-between pb-2">
+                                    <a class="text-[#007E32] text-sm" href="">Directo</a>
+                                    <div class="flex items-center gap-1">
+                                        <p class="text-sm text-[#666666]">Operado por</p>
+                                        <img src="./img/iso-avianca.png" alt="" />
+                                        <p class="text-sm text-[#666666]">Avianca Ecuador</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <img src="img/MOCHILA.png" width="20" style="display: inline-block">
+                        </div>
+                        <div class="lg:min-w-[25%] text-end">
+                            <p class="text-sm text-[#666666]">Ida y vuelta, desde</p>
+                            <p class="text-xl text-[#f39200] font-semibold">
+                                16,136 puntos
+                            </p>
+                        </div>
+                    </div>
+                    <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div class="!px-3 !pb-3 !pt-2 bg-[#F7F9FF] rounded-b-2xl">
+                            <div class="flex items-center justify-between pb-2 flex-wrap md:flex-nowrap">
+                                <p class="text-[#f39200] md:!pl-5 min-w-[50%] md:min-w-fit">LATAM - LA 2067</p>
+                                <div class="min-w-full md:min-w-fit">
+                                    <a class="flex items-center gap-1 text-[#007E32] cursor-pointer justify-end" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-controls="collapseThree">
+                                        <span>Cerrar</span>
+                                        <i data-lucide="x"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="flex gap-2 flex-col lg:flex-row">
+                                <div class="w-full shadow-md rounded-xl bg-white">
+                                    <div class="border-b !px-5 py-[10px] border-[#C5C5D2]">
+                                        <p class="text-[#f39200]">Basic</p>
+                                    </div>
+                                    <div class="!px-5 !py-4 flex flex-col gap-2">
+                                        <div class="flex items-start gap-2">
+                                            <img class="mt-[2px]" src="./img/icon-check.svg" alt="" />
+                                            <p class="text-[#212121] text-sm">
+                                                Bolso o mochila pequeña
+                                            </p>
+                                        </div>
+                                        <div class="flex items-start gap-2">
+                                            <img class="mt-[2px]" src="./img/icon-check.svg" alt="" />
+                                            <p class="text-[#212121] text-sm">
+                                                Equipaje de mano 10 Kg
+                                            </p>
+                                        </div>
+                                        <div class="flex items-start gap-2">
+                                            <img class="mt-[2px]" src="./img/icon-check.svg" alt="" />
+                                            <p class="text-[#212121] text-sm">
+                                                1 equipaje de bodega 23 Kg
+                                            </p>
+                                        </div>
+                                        <div class="flex items-start gap-2">
+                                            <img class="mt-[2px]" src="./img/icon-check.svg" alt="" />
+                                            <p class="text-[#212121] text-sm">
+                                                Cambio sin cargo + Diferencia de precio
+                                            </p>
+                                        </div>
+                                        <div class="flex items-start gap-2">
+                                            <img class="mt-[2px]" src="./img/icon-check.svg" alt="" />
+                                            <p class="text-[#212121] text-sm">
+                                                Selección de asiento Estándar
+                                            </p>
+                                        </div>
+                                        <div class="flex items-start gap-2">
+                                            <img class="mt-[2px]" src="./img/icon-check.svg" alt="" />
+                                            <p class="text-[#212121] text-sm">
+                                                Devolución antes de la salida del primer vuelo
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="!px-5 !py-4 text-end">
+                                        <p class="text-[#f39200]">16,136 puntos</p>
+                                    </div>
+                                    <div class="!px-5 !py-4">
+                                        <div class="flex justify-end items-center">
+                                            <a data-bs-toggle="modal" data-bs-target="#modalPuntosInsuficientes" class="w-full lg:w-[300px] text-[#fff] border flex items-center justify-center !bg-[#4D4D4D] h-[40px] rounded-md !px-3">
+                                                <span>ELEGIR</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="min-w-full lg:min-w-[25%] text-end">
-              <div class="flex flex-row-reverse lg:!flex-col items-center justify-between lg:items-end">
-                <div>
-                  <p class="text-sm text-[#666666]">Ida y vuelta, desde</p>
-                  <p class="text-xl text-[#f39200] font-semibold">
-                    16,136 puntos
-                  </p>
-                </div>
-                <a
-                  href="./detail-flight.html"
-                  class="text-[#4d4d4d] flex items-center justify-center border !border-[#4d4d4d] h-[36px] rounded-[5px] !px-3"
-                >
-                  <span>Editar</span>
-                </a>
-              </div>
+
+            <div class="flex items-center justify-center">
+                <button class="text-[#4D4D4D] border !border-[#4D4D4D] h-[36px] rounded-[5px] px-[22px] flex items-center gap-2">
+                    <span class="uppercase font-semibold text-[15px]">24 vuelos más</span>
+                    <i data-lucide="chevron-right"></i>
+                </button>
             </div>
-          </div>
         </div>
-      </div>
-
-      <div class="container mx-auto">
-        <div class="flex md:items-center justify-between pb-4 md:pb-10 flex-col md:flex-row gap-2">
-          <h1 class="text-2xl">
-            Elige un <span class="font-semibold">vuelo de vuelta</span>
-          </h1>
-          <div class="flex items-center gap-2">
-            <span class="text-sm">Ordenado por:</span>
-            <div class="dropdown">
-              <button
-                class="dropdown-toggle text-sm"
-                type="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                Precio
-              </button>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Económico</a></li>
-                <li><a class="dropdown-item" href="#">Ejecutivo</a></li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="container mx-auto">
-        <div class="accordion accordion-flush" id="accordionExample">
-          <div class="shadow-md rounded-2xl !mb-5">
-            <div
-              class="bg-white !p-4 md:!p-6 rounded-2xl flex items-end md:items-center cursor-pointer flex-col lg:flex-row !gap-3 md:!gap-0"
-              data-bs-toggle="collapse"
-              data-bs-target="#collapseOne"
-              aria-controls="collapseOne"
-            >
-              <div class="min-w-full lg:min-w-[75%]">
-                <div class="flex flex-col gap-6">
-                  <div class="flex items-center gap-3">
-                    <p class="text-[#f39200] md:text-xl lg:text-2xl text-nowrap">
-                      5:00 a.m. <span class="text-[#666666]">GYE</span>
-                    </p>
-                    <span class="w-full border-t border-[#C5C5D2]"></span>
-                    <div class="text-center text-nowrap">
-                      <p class="text-sm text-[#666666] leading-tight">
-                        Duración
-                      </p>
-                      <p class="text-sm text-[#666666] leading-tight">
-                        1h 20 min
-                      </p>
-                    </div>
-                    <span class="w-full border-t border-[#C5C5D2]"></span>
-                    <p class="text-[#f39200] md:text-xl lg:text-2xl text-nowrap">
-                      6:20 a.m. <span class="text-[#666666]">UIO</span>
-                    </p>
-                  </div>
-                  <div class="flex items-center justify-between">
-                    <a class="text-[#007E32] text-sm" href="">Directo</a>
-                    <div class="flex items-center gap-1">
-                      <p class="text-sm text-[#666666]">Operado por</p>
-                      <img src="./img/iso-latam.png" alt="" />
-                      <p class="text-sm text-[#666666]">LATAM Airlines</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="min-w-[25%] text-end">
-                <p class="text-sm text-[#666666]">Ida y vuelta, desde</p>
-                <p class="text-xl text-[#f39200] font-semibold">
-                  16,136 puntos
-                </p>
-              </div>
-            </div>
-            <div
-              id="collapseOne"
-              class="accordion-collapse collapse"
-              data-bs-parent="#accordionExample"
-            >
-              <div class="!px-3 !pb-3 !pt-2 bg-[#F7F9FF] rounded-b-2xl">
-                <div class="flex items-center justify-between pb-2 flex-wrap md:flex-nowrap">
-                  <p class="text-[#f39200] md:!pl-5 min-w-[50%] md:min-w-fit">LATAM - LA 2067</p>
-                  <div class="min-w-full md:min-w-fit">
-                    <a
-                      class="flex items-center gap-1 text-[#007E32] cursor-pointer justify-end"
-                      data-bs-toggle="collapse"
-                      data-bs-target="#collapseOne"
-                      aria-controls="collapseOne"
-                    >
-                      <span>Cerrar</span>
-                      <i data-lucide="x"></i>
-                    </a>
-                  </div>
-                </div>
-                <div class="flex gap-2 flex-col lg:flex-row">
-                  <div class="w-full shadow-md rounded-xl bg-white">
-                    <div class="border-b !px-5 py-[10px] border-[#C5C5D2]">
-                      <p class="text-[#f39200]">Basic</p>
-                    </div>
-                    <div class="!px-5 !py-4 flex flex-col gap-2">
-                      <div class="flex items-start gap-2">
-                        <img
-                          class="mt-[2px]"
-                          src="./img/icon-check.svg"
-                          alt=""
-                        />
-                        <p class="text-[#212121] text-sm">
-                          Bolso o mochila pequeña
-                        </p>
-                      </div>
-                      <div class="flex items-start gap-2">
-                        <img
-                          class="mt-[2px]"
-                          src="./img/icon-check.svg"
-                          alt=""
-                        />
-                        <p class="text-[#212121] text-sm">
-                          Equipaje de mano 10 Kg
-                        </p>
-                      </div>
-                      <div class="flex items-start gap-2">
-                        <img
-                          class="mt-[2px]"
-                          src="./img/icon-check.svg"
-                          alt=""
-                        />
-                        <p class="text-[#212121] text-sm">
-                          1 equipaje de bodega 23 Kg
-                        </p>
-                      </div>
-                      <div class="flex items-start gap-2">
-                        <img
-                          class="mt-[2px]"
-                          src="./img/icon-check.svg"
-                          alt=""
-                        />
-                        <p class="text-[#212121] text-sm">
-                          Cambio sin cargo + Diferencia de precio
-                        </p>
-                      </div>
-                      <div class="flex items-start gap-2">
-                        <img
-                          class="mt-[2px]"
-                          src="./img/icon-check.svg"
-                          alt=""
-                        />
-                        <p class="text-[#212121] text-sm">
-                          Selección de asiento Estándar
-                        </p>
-                      </div>
-                      <div class="flex items-start gap-2">
-                        <img
-                          class="mt-[2px]"
-                          src="./img/icon-check.svg"
-                          alt=""
-                        />
-                        <p class="text-[#212121] text-sm">
-                          Devolución antes de la salida del primer vuelo
-                        </p>
-                      </div>
-                    </div>
-                    <div class="!px-5 !py-4 text-end">
-                      <p class="text-[#f39200]">16,136 puntos</p>
-                    </div>
-                    <div class="!px-5 !py-4">
-                      <div class="flex justify-end items-center">
-                        <a
-                          href="./detail-flight-summary.html"
-                          class="w-full lg:w-[300px] text-[#fff] border flex items-center justify-center !bg-[#4D4D4D] h-[40px] rounded-md !px-3"
-                        >
-                          <span>ELEGIR</span>
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="shadow-md rounded-2xl !mb-5">
-            <div
-              class="bg-white !p-4 md:!p-6 rounded-2xl flex items-end md:items-center cursor-pointer flex-col lg:flex-row !gap-3 md:!gap-0"
-              data-bs-toggle="collapse"
-              data-bs-target="#collapseTwo"
-              aria-controls="collapseTwo"
-            >
-              <div class="min-w-full lg:min-w-[75%]">
-                <div class="flex flex-col gap-6">
-                  <div class="flex items-center gap-3">
-                    <p class="text-[#f39200] md:text-xl lg:text-2xl text-nowrap">
-                      5:00 a.m. <span class="text-[#666666]">GYE</span>
-                    </p>
-                    <span class="w-full border-t border-[#C5C5D2]"></span>
-                    <div class="text-center text-nowrap">
-                      <p class="text-sm text-[#666666] leading-tight">
-                        Duración
-                      </p>
-                      <p class="text-sm text-[#666666] leading-tight">
-                        1h 20 min
-                      </p>
-                    </div>
-                    <span class="w-full border-t border-[#C5C5D2]"></span>
-                    <p class="text-[#f39200] md:text-xl lg:text-2xl text-nowrap">
-                      6:20 a.m. <span class="text-[#666666]">UIO</span>
-                    </p>
-                  </div>
-                  <div class="flex items-center justify-between pb-2">
-                    <a class="text-[#007E32] text-sm" href="">Directo</a>
-                    <div class="flex items-center gap-1">
-                      <p class="text-sm text-[#666666]">Operado por</p>
-                      <img src="./img/iso-avianca.png" alt="" />
-                      <p class="text-sm text-[#666666]">Avianca Ecuador</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="min-w-[25%] text-end">
-                <p class="text-sm text-[#666666]">Ida y vuelta, desde</p>
-                <p class="text-xl text-[#f39200] font-semibold">
-                  16,136 puntos
-                </p>
-              </div>
-            </div>
-            <div
-              id="collapseTwo"
-              class="accordion-collapse collapse"
-              data-bs-parent="#accordionExample"
-            >
-              <div class="!px-3 !pb-3 !pt-2 bg-[#F7F9FF] rounded-b-2xl">
-                <div class="flex items-center justify-between pb-2 flex-wrap md:flex-nowrap">
-                  <p class="text-[#f39200] md:!pl-5 min-w-[50%] md:min-w-fit">LATAM - LA 2067</p>
-                  <div class="min-w-full md:min-w-fit">
-                    <a
-                      class="flex items-center gap-1 text-[#007E32] cursor-pointer justify-end"
-                      data-bs-toggle="collapse"
-                      data-bs-target="#collapseTwo"
-                      aria-controls="collapseTwo"
-                    >
-                      <span>Cerrar</span>
-                      <i data-lucide="x"></i>
-                    </a>
-                  </div>
-                </div>
-                <div class="flex gap-2 flex-col lg:flex-row">
-                  <div class="w-full shadow-md rounded-xl bg-white">
-                    <div class="border-b !px-5 py-[10px] border-[#C5C5D2]">
-                      <p class="text-[#f39200]">Basic</p>
-                    </div>
-                    <div class="!px-5 !py-4 flex flex-col gap-2">
-                      <div class="flex items-start gap-2">
-                        <img
-                          class="mt-[2px]"
-                          src="./img/icon-check.svg"
-                          alt=""
-                        />
-                        <p class="text-[#212121] text-sm">
-                          Bolso o mochila pequeña
-                        </p>
-                      </div>
-                      <div class="flex items-start gap-2">
-                        <img
-                          class="mt-[2px]"
-                          src="./img/icon-check.svg"
-                          alt=""
-                        />
-                        <p class="text-[#212121] text-sm">
-                          Equipaje de mano 10 Kg
-                        </p>
-                      </div>
-                      <div class="flex items-start gap-2">
-                        <img
-                          class="mt-[2px]"
-                          src="./img/icon-check.svg"
-                          alt=""
-                        />
-                        <p class="text-[#212121] text-sm">
-                          1 equipaje de bodega 23 Kg
-                        </p>
-                      </div>
-                      <div class="flex items-start gap-2">
-                        <img
-                          class="mt-[2px]"
-                          src="./img/icon-check.svg"
-                          alt=""
-                        />
-                        <p class="text-[#212121] text-sm">
-                          Cambio sin cargo + Diferencia de precio
-                        </p>
-                      </div>
-                      <div class="flex items-start gap-2">
-                        <img
-                          class="mt-[2px]"
-                          src="./img/icon-check.svg"
-                          alt=""
-                        />
-                        <p class="text-[#212121] text-sm">
-                          Selección de asiento Estándar
-                        </p>
-                      </div>
-                      <div class="flex items-start gap-2">
-                        <img
-                          class="mt-[2px]"
-                          src="./img/icon-check.svg"
-                          alt=""
-                        />
-                        <p class="text-[#212121] text-sm">
-                          Devolución antes de la salida del primer vuelo
-                        </p>
-                      </div>
-                    </div>
-                    <div class="!px-5 !py-4 text-end">
-                      <p class="text-[#f39200]">16,136 puntos</p>
-                    </div>
-                    <div class="!px-5 !py-4">
-                      <div class="flex justify-end items-center">
-                        <a
-                          href="./detail-flight-summary.html"
-                          class="w-full lg:w-[300px] text-[#fff] border flex items-center justify-center !bg-[#4D4D4D] h-[40px] rounded-md !px-3"
-                        >
-                          <span>ELEGIR</span>
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="shadow-md rounded-2xl !mb-5">
-            <div
-              class="bg-white !p-4 md:!p-6 rounded-2xl flex items-end md:items-center cursor-pointer flex-col lg:flex-row !gap-3 md:!gap-0"
-              data-bs-toggle="collapse"
-              data-bs-target="#collapseThree"
-              aria-controls="collapseThree"
-            >
-              <div class="min-w-full lg:min-w-[75%]">
-                <div class="flex flex-col gap-6">
-                  <div class="flex items-center gap-3">
-                    <p class="text-[#f39200] md:text-xl lg:text-2xl text-nowrap">
-                      5:00 a.m. <span class="text-[#666666]">GYE</span>
-                    </p>
-                    <span class="w-full border-t border-[#C5C5D2]"></span>
-                    <div class="text-center text-nowrap">
-                      <p class="text-sm text-[#666666] leading-tight">
-                        Duración
-                      </p>
-                      <p class="text-sm text-[#666666] leading-tight">
-                        1h 20 min
-                      </p>
-                    </div>
-                    <span class="w-full border-t border-[#C5C5D2]"></span>
-                    <p class="text-[#f39200] md:text-xl lg:text-2xl text-nowrap">
-                      6:20 a.m. <span class="text-[#666666]">UIO</span>
-                    </p>
-                  </div>
-                  <div class="flex items-center justify-between pb-2">
-                    <a class="text-[#007E32] text-sm" href="">Directo</a>
-                    <div class="flex items-center gap-1">
-                      <p class="text-sm text-[#666666]">Operado por</p>
-                      <img src="./img/iso-avianca.png" alt="" />
-                      <p class="text-sm text-[#666666]">Avianca Ecuador</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="lg:min-w-[25%] text-end">
-                <p class="text-sm text-[#666666]">Ida y vuelta, desde</p>
-                <p class="text-xl text-[#f39200] font-semibold">
-                  16,136 puntos
-                </p>
-              </div>
-            </div>
-            <div
-              id="collapseThree"
-              class="accordion-collapse collapse"
-              data-bs-parent="#accordionExample"
-            >
-              <div class="!px-3 !pb-3 !pt-2 bg-[#F7F9FF] rounded-b-2xl">
-                <div class="flex items-center justify-between pb-2 flex-wrap md:flex-nowrap">
-                  <p class="text-[#f39200] md:!pl-5 min-w-[50%] md:min-w-fit">LATAM - LA 2067</p>
-                  <div class="min-w-full md:min-w-fit">
-                    <a
-                      class="flex items-center gap-1 text-[#007E32] cursor-pointer justify-end"
-                      data-bs-toggle="collapse"
-                      data-bs-target="#collapseThree"
-                      aria-controls="collapseThree"
-                    >
-                      <span>Cerrar</span>
-                      <i data-lucide="x"></i>
-                    </a>
-                  </div>
-                </div>
-                <div class="flex gap-2 flex-col lg:flex-row">
-                  <div class="w-full shadow-md rounded-xl bg-white">
-                    <div class="border-b !px-5 py-[10px] border-[#C5C5D2]">
-                      <p class="text-[#f39200]">Basic</p>
-                    </div>
-                    <div class="!px-5 !py-4 flex flex-col gap-2">
-                      <div class="flex items-start gap-2">
-                        <img
-                          class="mt-[2px]"
-                          src="./img/icon-check.svg"
-                          alt=""
-                        />
-                        <p class="text-[#212121] text-sm">
-                          Bolso o mochila pequeña
-                        </p>
-                      </div>
-                      <div class="flex items-start gap-2">
-                        <img
-                          class="mt-[2px]"
-                          src="./img/icon-check.svg"
-                          alt=""
-                        />
-                        <p class="text-[#212121] text-sm">
-                          Equipaje de mano 10 Kg
-                        </p>
-                      </div>
-                      <div class="flex items-start gap-2">
-                        <img
-                          class="mt-[2px]"
-                          src="./img/icon-check.svg"
-                          alt=""
-                        />
-                        <p class="text-[#212121] text-sm">
-                          1 equipaje de bodega 23 Kg
-                        </p>
-                      </div>
-                      <div class="flex items-start gap-2">
-                        <img
-                          class="mt-[2px]"
-                          src="./img/icon-check.svg"
-                          alt=""
-                        />
-                        <p class="text-[#212121] text-sm">
-                          Cambio sin cargo + Diferencia de precio
-                        </p>
-                      </div>
-                      <div class="flex items-start gap-2">
-                        <img
-                          class="mt-[2px]"
-                          src="./img/icon-check.svg"
-                          alt=""
-                        />
-                        <p class="text-[#212121] text-sm">
-                          Selección de asiento Estándar
-                        </p>
-                      </div>
-                      <div class="flex items-start gap-2">
-                        <img
-                          class="mt-[2px]"
-                          src="./img/icon-check.svg"
-                          alt=""
-                        />
-                        <p class="text-[#212121] text-sm">
-                          Devolución antes de la salida del primer vuelo
-                        </p>
-                      </div>
-                    </div>
-                    <div class="!px-5 !py-4 text-end">
-                      <p class="text-[#f39200]">16,136 puntos</p>
-                    </div>
-                    <div class="!px-5 !py-4">
-                      <div class="flex justify-end items-center">
-                        <a
-                          href="./detail-flight-summary.html"
-                          class="w-full lg:w-[300px] text-[#fff] border flex items-center justify-center !bg-[#4D4D4D] h-[40px] rounded-md !px-3"
-                        >
-                          <span>ELEGIR</span>
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="flex items-center justify-center">
-          <button
-            class="text-[#4D4D4D] border !border-[#4D4D4D] h-[36px] rounded-[5px] px-[22px] flex items-center gap-2"
-          >
-            <span class="uppercase font-semibold text-[15px]"
-              >24 vuelos más</span
-            >
-            <i data-lucide="chevron-right"></i>
-          </button>
-        </div>
-      </div>
     </section>
 
     <!-- footer -->
-    <footer class="bg-[#2e2e2e] h-[180px] w-100"></footer>
-
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-      crossorigin="anonymous"
-    ></script>
+    <footer class="bg-[#2e2e2e] h-[245px] w-100"><img src="img/footer.png"></footer>
+    <div class="modal fade" id="modalPuntosInsuficientes" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable modal-fullscreen-md-down ">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="text-[#666] font-semibold" id="staticBackdropLabel">Puntos insuficientes</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="bg-[#f1f1f1] px-4 py-2 rounded-md flex !gap-2 !mb-4 !mt-4">
+                        <i data-lucide="badge-info" class="text-[#007E32] min-w-[22px]"></i>
+                        <p class="text-[#666] text-md">Lo sentimos, no puedes elegir este vuelo ya que no cuentas con puntos suficientes.<br>
+                            Puedes elegir un vuelo de menor valor o si necesitas puntos adicionales para efectuar tu canje, cómpralos a través de nuestro call center 07 413 5000 o en cualquiera de nuestras Agencias JEP a nivel nacional</p>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="w-full flex items-center justify-center h-[42px] bg-[#f39200] rounded-[5px]" data-bs-dismiss="modal">
+                        <span class="text-white font-semibold text-[15px] uppercase">entendido</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/lucide@latest"></script>
     <script>
-      lucide.createIcons();
+        lucide.createIcons();
 
-      const showButton = document.querySelector(".showButton");
-      const showButton2 = document.querySelector(".showButton2");
-      const hideButton = document.querySelector(".hideButton");
-      const element = document.querySelector(".myElement");
+        const showButton = document.querySelector(".showButton");
+        const showButton2 = document.querySelector(".showButton2");
+        const hideButton = document.querySelector(".hideButton");
+        const element = document.querySelector(".myElement");
 
-      showButton.onclick = function() {
-        element.classList.remove("hidden");
-      };
-      
-      showButton2.onclick = function() {
-        element.classList.remove("hidden");
-      };
+        showButton.onclick = function() {
+            element.classList.remove("hidden");
+        };
 
-      hideButton.onclick = function() {
-        element.classList.add("hidden");
-      };
+        showButton2.onclick = function() {
+            element.classList.remove("hidden");
+        };
+
+        hideButton.onclick = function() {
+            element.classList.add("hidden");
+        };
+
     </script>
-  </body>
+</body>
+
 </html>
